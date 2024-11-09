@@ -4,33 +4,71 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(231, 182, 126);
+    background-image: url('./background.png'); // Dodanie obrazka jako tło
+    background-size: cover; // Obrazek dopasowuje się do całego ekranu
+    background-position: center; // Obrazek wyśrodkowany
+    background-repeat: no-repeat; // Zapobiega powtarzaniu się obrazka
+
 }
+
 
 nav { 
     background-color: rgb(255, 136, 0);
     height: fit-content;
     position: sticky; // Makes the nav stick to the top of the page
-    width: 100vw; // Full view width
+    width: 100vw; // Full view width  
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; // Rozkłada elementy na całą szerokość
+    padding: 10px 2vw; // Daje trochę przestrzeni w lewo i prawo
+    
+
+    .ikonka {
+        display: flex;
+        margin-right: auto;
+        align-items: center;
+
+        span {
+            margin-left: 15px;
+        }
+    }
 
     div {
         padding: 10px 2vw; // Padding around the div
 
         ul {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             list-style-type: none; // Remove bullet points
+            align-items: center;
+
+            .rest {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        
+            
+            .ikonka > img{
+                height: 50px;
+                border-radius: 50px;
+            }
+
+
 
             li {
                 display: inline; // Display list items in a line
                 padding: 0px 10px;
 
                 input {
-                    background-color: #646060;
-                    border: 2px solid rgb(48, 48, 48);
+                    background-color: blanchedalmond;
+                    border: none;
                     border-radius: 8px;
                     padding: 7px;
+                    min-width: 270px;
+                    text-align: right;
                 }
 
                 button {
@@ -40,13 +78,6 @@ nav {
                     padding: 7px;
                 }
 
-                .beender {
-                    color: red;
-                    background-color: rgb(109, 0, 0);
-                    border: 2px solid red;
-                    font-weight: bold;
-                }
-
                 .login {
                     border-radius: 20px;
                     padding: 15px;
@@ -54,10 +85,10 @@ nav {
             }
 
             .name {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 color: white;
                 font-size: 25px;
                 font-weight: bold; // Bold font for the title
-                padding-right: 35vw; // POMOCY BO TO ZNIKA Z EKRANU!!
             }
         }
     }
@@ -142,3 +173,23 @@ nav {
 
 
 
+.beender {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(218, 69, 151, 0.9);
+    border-radius: 50px;
+    font-weight: bold;
+    width: 86px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: none;
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}

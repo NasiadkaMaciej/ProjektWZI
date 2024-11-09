@@ -4,8 +4,12 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background-color: rgb(231, 182, 126);
+  background-image: url("./background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -14,24 +18,48 @@ nav {
   height: fit-content;
   position: sticky;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2vw;
+}
+nav .ikonka {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+nav .ikonka span {
+  margin-left: 15px;
 }
 nav div {
   padding: 10px 2vw;
 }
 nav div ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   list-style-type: none;
+  align-items: center;
+}
+nav div ul .rest {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav div ul .ikonka > img {
+  height: 50px;
+  border-radius: 50px;
 }
 nav div ul li {
   display: inline;
   padding: 0px 10px;
 }
 nav div ul li input {
-  background-color: #646060;
-  border: 2px solid rgb(48, 48, 48);
+  background-color: blanchedalmond;
+  border: none;
   border-radius: 8px;
   padding: 7px;
+  min-width: 270px;
+  text-align: right;
 }
 nav div ul li button {
   background-color: #646060;
@@ -39,21 +67,15 @@ nav div ul li button {
   border-radius: 8px;
   padding: 7px;
 }
-nav div ul li .beender {
-  color: red;
-  background-color: rgb(109, 0, 0);
-  border: 2px solid red;
-  font-weight: bold;
-}
 nav div ul li .login {
   border-radius: 20px;
   padding: 15px;
 }
 nav div ul .name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   font-size: 25px;
   font-weight: bold;
-  padding-right: 35vw;
 }
 
 .feed {
@@ -114,4 +136,24 @@ nav div ul .name {
 }
 .feed .feed-item .description button:hover {
   background-color: #6b2b00;
+}
+
+.beender {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(218, 69, 151, 0.9);
+  border-radius: 50px;
+  font-weight: bold;
+  width: 86px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: none;
+}
+.beender a {
+  text-decoration: none;
+  color: whitesmoke;
 }/*# sourceMappingURL=index.css.map */

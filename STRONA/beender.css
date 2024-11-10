@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(255, 162, 174);
+  background-image: url("./src/pink.webp");
+  background-size: cover;
+  background-position: center;
+}
+body nav {
+  background-color: rgb(255, 0, 55);
+  height: -moz-fit-content;
+  height: fit-content;
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2vw;
+}
+body nav div {
+  width: 95%;
+  padding: 10px 2vw;
+}
+body nav div ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+body nav div ul .ikonka {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  height: 50px;
+}
+body nav div ul .ikonka img {
+  height: 50px;
+  border-radius: 50px;
+}
+body nav div ul .ikonka .name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+body nav div ul .rest {
+  display: flex;
+  align-items: center;
+}
+body nav div ul .rest button {
+  background-color: blanchedalmond;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 15px;
+}
+body .container {
+  align-items: center;
+  display: flex;
+}
+body .container .feed {
+  border: 2px dashed blue;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 40px;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 40% 20% 40%;
+}
+body .container .feed button {
+  border: 2px dashed rgb(250, 0, 0);
+  grid-row: 2;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 40px;
+  height: 100px;
+  width: 100px;
+}
+body .container .feed .no {
+  grid-column: 1;
+  background-color: red;
+}
+body .container .feed .yes {
+  grid-column: 3;
+  background-color: green;
+}
+body .container .feed .about {
+  border: 2px dashed blue;
+  align-items: center;
+  background-color: rgb(240, 131, 146);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+body .container .feed .about img {
+  width: 400px;
+  height: 500px;
+}
+body .container .feed .about h3 {
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 10px;
+}
+body .container .feed .about p {
+  color: whitesmoke;
+  font-size: 15px;
+  margin: 7px 15px;
+}/*# sourceMappingURL=beender.css.map */

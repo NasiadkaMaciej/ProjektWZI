@@ -6,10 +6,9 @@
 body {
   height: 100%;
   background-color: rgb(231, 182, 126);
-  background-image: url("./background.png");
+  background-image: url("./src/background.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 nav {
@@ -17,65 +16,59 @@ nav {
   height: -moz-fit-content;
   height: fit-content;
   position: sticky;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 2vw;
 }
-nav .ikonka {
-  display: flex;
-  margin-right: auto;
-  align-items: center;
-}
-nav .ikonka span {
-  margin-left: 15px;
-}
 nav div {
+  width: 95%;
   padding: 10px 2vw;
 }
 nav div ul {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
-  align-items: center;
 }
-nav div ul .rest {
+nav div ul .ikonka {
   display: flex;
+  margin-right: auto;
   align-items: center;
-  justify-content: flex-end;
+  height: 50px;
 }
-nav div ul .ikonka > img {
+nav div ul .ikonka img {
   height: 50px;
   border-radius: 50px;
 }
-nav div ul li {
-  display: inline;
-  padding: 0px 10px;
-}
-nav div ul li input {
-  background-color: blanchedalmond;
-  border: none;
-  border-radius: 8px;
-  padding: 7px;
-  min-width: 270px;
-  text-align: right;
-}
-nav div ul li button {
-  background-color: #646060;
-  border: 2px solid rgb(48, 48, 48);
-  border-radius: 8px;
-  padding: 7px;
-}
-nav div ul li .login {
-  border-radius: 20px;
-  padding: 15px;
-}
-nav div ul .name {
+nav div ul .ikonka .name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   font-size: 25px;
   font-weight: bold;
+  margin-left: 15px;
+}
+nav div ul .rest {
+  display: flex;
+  align-items: center;
+}
+nav div ul .rest input {
+  background-color: blanchedalmond;
+  border: none;
+  border-radius: 8px;
+  padding: 7px;
+  min-width: 500px;
+  text-align: center;
+  margin-right: 30vw;
+}
+nav div ul .rest button {
+  background-color: blanchedalmond;
+  border: none;
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 7px;
+}
+nav div ul .rest .login {
+  border-radius: 20px;
+  padding: 15px;
 }
 
 .feed {
@@ -91,51 +84,54 @@ nav div ul .name {
   border-radius: 8px;
   box-shadow: 0px 0px 20px rgb(255, 102, 0);
   display: grid;
-  margin-bottom: 20px;
   padding: 20px 0;
   width: 100%;
-  grid-template-columns: 40% 60%; /* Two equal columns */
-  grid-template-rows: 20% 40% 20% 10%; /* Two equal columns */
+  align-items: center;
+  grid-template-columns: 4% 36% 56% 4%;
+  grid-template-rows: 2% 28% 40% 20% 10%;
 }
 .feed .feed-item img {
   height: 400px;
   justify-self: center;
-  width: 200px;
-  grid-column: 1;
+  width: 350px;
+  grid-column: 2;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
+  margin-top: 50px;
 }
 .feed .feed-item .rating {
   color: #ffcc00;
   font-size: 20px;
-  grid-row: 4;
+  grid-column: 2;
+  grid-row: 5;
   justify-self: center;
 }
-.feed .feed-item .description {
-  float: right;
-  grid-column: 2;
-}
-.feed .feed-item .description p {
+.feed .feed-item h3 {
   color: white;
-  font-size: 14px;
-}
-.feed .feed-item .description h3 {
-  color: white;
-  font-size: 22px;
+  font-size: 25px;
   margin: 0;
+  grid-column: 3;
+  grid-row: 1;
 }
-.feed .feed-item .description button {
-  background-color: #817f7f;
-  border: 2px solid rgb(58, 58, 58);
+.feed .feed-item p {
+  color: white;
+  font-size: 18px;
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.feed .feed-item button {
+  background-color: blanchedalmond;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  text-decoration: none;
-  padding: 8px 16px;
-  transition: background-color 0.3s ease;
+  padding: 5px 20px;
+  grid-row: 5;
+  grid-column: 3;
+  justify-self: end;
 }
-.feed .feed-item .description button:hover {
-  background-color: #6b2b00;
+.feed .feed-item button:hover {
+  background-color: #a19994;
 }
 
 .beender {

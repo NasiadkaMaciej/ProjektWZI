@@ -89,6 +89,7 @@ nav div ul .rest .login {
   align-items: center;
   grid-template-columns: 4% 36% 56% 4%;
   grid-template-rows: 2% 28% 40% 20% 10%;
+  margin-bottom: 50px;
 }
 .feed .feed-item img {
   height: 400px;
